@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="../summative/css files/index.css">
+</head>
+<body>
+    <div class="head">
+        <div class="headings">
+            <h1 style="margin-left: 350px;">XYZ - COMPANY</h1>
+            <h2 style="margin-left: 280px;">CURRENCY  EXCHANGE PLATFORM</h2>
+        </div>
+    </div>
+    <fieldset>
+        <div id="label1">
+            <label>Amount</label>
+        </div>
+        <div class="input1">
+            <input type="number" id="amount" name="number" value="">
+        </div>
+        <div class="label2">
+            <label>From</label>
+        </div>
+        <div class="select1">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="RWF">RWF</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+        <div id="to">
+            <label>TO</label>
+        </div>
+        <div id="select2">
+            <select id="toCurrency">
+                <option value="RWF">RWF</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+    </fieldset>
+    <div id="button">
+    <button onclick="convertCurrency()" style="background-color: rgb(8, 8, 92);  color: white; margin-top: 40px; border-radius: 7px;width: 90px;">Convert</button>
+</div>
+    <div class="Result">
+        <label id="resultLabel"></label>
+    </div>
+    <div id="sa">
+    <label>Result</label>
+</div>
+    <script>
+        function convertCurrency() {
+            // Get the amount and currencies
+            var amount = parseFloat(document.getElementById('amount').value);
+            var fromCurrency = document.getElementById('fromCurrency').value;
+            var toCurrency = document.getElementById('toCurrency').value;
+if(NaN is!==amount){
+    return false;
+}
+            // Define exchange rates (for demonstration purposes)
+            var exchangeRates = {
+                'USD': { 'RWF': 1000, 'EUR': 0.92, 'GBP': 0.82 },
+                'RWF': { 'USD': 0.001, 'EUR': 0.00092, 'GBP': 0.00082 },
+                'EUR': { 'USD': 1.09, 'RWF': 1087.36, 'GBP': 0.89 },
+                'GBP': { 'USD': 1.22, 'RWF': 1218.73, 'EUR': 1.12 }
+            };
+
+            // Perform conversion
+            var result = amount * exchangeRates[fromCurrency][toCurrency];
+
+            // Update the result label
+            document.getElementById('resultLabel').innerText = result.toFixed(2) + ' ' + toCurrency;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.headings{
+}
+body{background-color: gray;}
+.head{
+    background-color: rgb(8, 8, 97);
+    width: 900px;
+    height: 250px;
+    margin-left: 90px;
+    color: white;
+}
+fieldset{
+    margin-top: -70px;
+    margin-left: 150px;
+    background-color: white;
+    height: 200px;
+    width: 750px;
+}
+
+.input1{
+    margin-left: 100px;
+
+}
+.select1{
+    margin-left: 350px;
+}
+
+#label1{
+    margin-left: 100px;
+
+}
+.label2{
+    margin-left: 350px;
+    margin-top: -40px;
+}
+button{
+    margin-top: 30px;
+}
+#to{
+    margin-left: 600px;
+    margin-top: -40px;
+}
+#select2{
+    margin-left: 600px;
+}
+
+#resultLabel{
+    margin-left: 800px;
+    margin-top: -30px;
+    
+}
+.Result{
+    margin-top: -90px;
+    margin-left: -20px;
+}
+#sa{
+    margin-left: 780px;
+margin-top: -40px;
+}
+#button{
+    margin-top: -90px;
+    margin-left: 250px;
+}
