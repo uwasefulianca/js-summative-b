@@ -1,12 +1,12 @@
 .headings{
 }
-body{background-color: gray;}
+body{background-color: grey;}
 .head{
     background-color: rgb(8, 8, 97);
     width: 900px;
     height: 250px;
     margin-left: 90px;
-    color: white;
+    color: rgb(252, 242, 242);
 }
 fieldset{
     margin-top: -70px;
